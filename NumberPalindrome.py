@@ -1,3 +1,4 @@
+#No negative number will be considered palindrome due to the negtive sign.
 def isPalindrome(x):
     if(x<0):
         return False
@@ -12,5 +13,5 @@ def isPalindrome(x):
             return False
     return True
 
-x=int(input())
-print(isPalindrome(x))
+x=int(input("Enter the number: "))
+print("The number is palidrome:", isPalindrome(x))
