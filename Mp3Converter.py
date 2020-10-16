@@ -1,11 +1,13 @@
 import moviepy.editor as mp
 from tkinter import *
+from tkinter.ttk import Progressbar
 import tkinter.font as font
 import time
+import threading
 
 #Conversion Function
 def convertToAudio():
-    result.configure(text=" ")
+    result.configure(text="......")
     window.update()
     time.sleep(1)
     try:
@@ -16,7 +18,7 @@ def convertToAudio():
         result.configure(text="DONE")
     except:
         result.configure(text="FAILED")
-
+        
 
 #Main Window
 #Basic
@@ -42,12 +44,12 @@ L2.place(x=98, y=70)
 E2 = Entry(window, textvariable = Audio)
 E2.place(x=215, y=75, width=200)
 
+#Result Label
+result = Label(window, font=Myfont, background="grey")
+result.place(x=230, y=150)
+
 #Main Button
 convert = Button(window, text="Convert", font=Myfont, command=convertToAudio)
 convert.place(x=334, y=105, height=25)
-
-#Result Label
-result = Label(window, font=Myfont, background="grey")
-result.place(x=225, y=160)
 
 window.mainloop()
