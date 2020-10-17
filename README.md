@@ -1,5 +1,7 @@
-# YouTube Downloader
+# MP3 CONVERTER
 
-1.)Downloader.py -- Downloads the video whose link specified
+Modules/libraries needed:  moviepy, tkinter
 
-2.)Mp3Converter.py -- Converts video to audio
+A GUI interface to convert given video file to audio using module moviepy.editor.
+Things to take care of: Video file is in the same folder as the py file
+                        You have the necessary modules installed
