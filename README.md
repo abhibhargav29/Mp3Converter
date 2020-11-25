@@ -1,6 +1,6 @@
 ## YT DOWNLOADER
 
-We have downloaded video from you tub eusing pytube3. We also have a ready to run executable of the same.
+We have a CLI to download video from youtube using pytube3. We also have a ready to run executable of the same.
 
 ## MP3 CONVERTER
 
